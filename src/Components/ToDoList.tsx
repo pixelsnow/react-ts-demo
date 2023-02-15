@@ -2,7 +2,7 @@ import React from "react";
 
 interface ToDoListProps {
   todos: {
-    id: number;
+    id: string;
     text: string;
   }[];
 }
