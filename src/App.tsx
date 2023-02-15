@@ -8,10 +8,15 @@ const App: React.FC = () => {
     { id: 1, text: "Finish TS project and course" },
     { id: 2, text: "Feed cat" },
   ];
+
+  const todoAddHandler = (text: string) => {
+    console.log(text);
+  };
+
   return (
     <div className="App">
       <h1>hi</h1>
-      <NewToDo />
+      <NewToDo addHandler={todoAddHandler} />
       <ToDoList todos={todos} />
     </div>
   );
